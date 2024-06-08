@@ -3,11 +3,72 @@ $secondary: #FA5959;
 
 $h1-font-size: 3rem;
 
+$card-border-width: none;
+
+$card-box-shadow: 0 2px 8px rgba(160, 178, 184, 0.5);
+
 #tab {
     width: 600px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid grey;
+}
+
+.p-text {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.card {
+    padding: 30px;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border-width: $card-border-width;
+    box-shadow: $card-box-shadow;
+}
+
+.card2 {
+    margin-top: 40px;  
+}
+
+.card3 {
+    margin-top: 80px;
+}
+
+.img-card {
+    width: 100px;
+    height: auto;
+}
+
+.btn-card {
+    margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
