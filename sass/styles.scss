@@ -3,4 +3,11 @@ $secondary: #FA5959;
 
 $h1-font-size: 3rem;
 
+#tab {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
